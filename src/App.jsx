@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import axios from 'axios'
 import RandomLocacion from './component/RandomLocacion';
-import PokemonItem from './component/PokemonItem';
+
 
 function App() {
 
