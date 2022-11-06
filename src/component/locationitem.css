@@ -1,5 +1,4 @@
 .container {
-  background-color: peru;
   margin: 15px;
   border-radius: 10px;
   padding: 8px;
@@ -7,7 +6,36 @@
   color: aliceblue;
 }
 
+@media (min-width:481px){
+  .container {
+    display: flex;
+  }
+}
+
 img {
   width: 100%;
+}
+
+b {
+  color: #F5B7B1;
+}
+
+@media (min-width:481px){
+  .containerImage {
+    width: 50%;
+  }
+  .container-flex {
+    display: flex;
+  }
+  .containerInfoResident {
+    margin-left: 20px;
+  }
+  .name {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
 }
 

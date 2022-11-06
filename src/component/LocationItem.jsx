@@ -20,10 +20,13 @@ const LocationItem = ({url}) => {
       <div className='containerImage'>
         <img src={listResidents.image} alt="" />
       </div>
-      <p><b>Name: </b>{listResidents.name}</p>
-      <p><b>Status: </b>{listResidents.status}</p>
-      <p><b>Origin: </b>{listResidents.origin?.name}</p>
-      <p><b>Episodes: </b>{listResidents.episode?.length}</p>
+      <div className='containerInfoResident'>
+        <p className='name'><b>Name: </b>{listResidents.name}</p>
+        <p><b>Status: </b>{listResidents.status}</p>
+        <p><b>Origin: </b>{listResidents.origin?.name}</p>
+        <p><b>Episodes: </b>{listResidents.episode?.length}</p>
+      </div>
+      
     </div>
   );
 };

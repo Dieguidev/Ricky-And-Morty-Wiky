@@ -34,14 +34,14 @@ const RandomLocacion = () => {
         </div>
 
         <h2>{randomLocation.name}</h2>
-        <ul>
+        <ul className='container-info'>
           <p className='ubicationDate'><b>Type: </b>{randomLocation.type}</p>
           <p className='ubicationDate'><b>Dimension: </b>{randomLocation.dimension}</p>
           <p className='ubicationDate'><b>Residents:</b>  {randomLocation.residents?.length}</p>
         </ul>
       </div>
      
-      <ul>
+      <ul className='listResidents'>
         {randomLocation.residents?.map(resident => (
           <LocationItem key={resident} url={resident} />
         ))}
