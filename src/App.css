@@ -14,3 +14,9 @@ body {
 img{
   width: 100vw;
 }
+
+h1 {
+  color: #D4AC0D;
+  text-align: center;
+  font-size: 40px;
+}

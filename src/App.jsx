@@ -13,7 +13,7 @@ function App() {
       <header>
         <img src="https://eloutput.com/app/uploads-eloutput.com/2021/01/Rick-morty-9.jpg" alt="" />
       </header>
-
+      <h1>Rick ad Morty Wiky</h1>
       <RandomLocacion />
     </div>
   )

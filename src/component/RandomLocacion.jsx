@@ -33,7 +33,7 @@ const RandomLocacion = () => {
           <button onClick={searchLocation}>Search</button>
         </div>
 
-        <h2><b>Ubication: </b>{randomLocation.name}</h2>
+        <h2>{randomLocation.name}</h2>
         <ul>
           <p className='ubicationDate'><b>Type: </b>{randomLocation.type}</p>
           <p className='ubicationDate'><b>Dimension: </b>{randomLocation.dimension}</p>
