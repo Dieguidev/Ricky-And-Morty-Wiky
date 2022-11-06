@@ -1,0 +1,13 @@
+.container {
+  background-color: peru;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #34495E;
+  color: aliceblue;
+}
+
+img {
+  width: 100%;
+}
+
