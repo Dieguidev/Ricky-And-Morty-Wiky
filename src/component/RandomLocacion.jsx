@@ -15,7 +15,7 @@ const RandomLocacion = () => {
       .then(res => setRandomLocation(res.data));
   }, [])
 
-  // console.log(randomLocation)
+  console.log(randomLocation)
 
 
   const searchLocation = () => {
@@ -30,6 +30,7 @@ const RandomLocacion = () => {
       <div className='container-search-info'>
         <div className='container-input'>
           <input placeholder='Search Ubication' type="text" value={locationId} onChange={e =>setLocationId(e.target.value)}/>
+
           <button onClick={searchLocation}>Search</button>
         </div>
 
