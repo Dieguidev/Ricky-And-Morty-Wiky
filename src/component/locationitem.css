@@ -1,4 +1,5 @@
 .container {
+
   margin: 15px;
   border-radius: 10px;
   padding: 8px;
@@ -12,12 +13,35 @@
   }
 }
 
+.containerInfoResident-status {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
 img {
   width: 100%;
 }
 
 b {
   color: #F5B7B1;
+}
+
+.circleStatus {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid cornflowerblue;
+}
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+.gray {
+  background-color: gray;
 }
 
 @media (min-width:481px){

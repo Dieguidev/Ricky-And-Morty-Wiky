@@ -9,10 +9,12 @@
 
 .container-input {
   margin: 5px 0;
+
 }
 
 input {
   width: 60vw;
+  max-width: 670px;
   height: 25px;
   border: none;
   border-radius: 5px;
@@ -26,7 +28,7 @@ input {
 }
 
 button {
-  width: 20vw;
+  width: 15vw;
   height: 25px;
   margin: 0 5px;
   border: 2px solid white;
@@ -37,7 +39,7 @@ button {
 
 @media (min-width:481px){
   button {
-    width: 200px;
+    width: 150px;
     height: 40px;
   }
 }
@@ -65,7 +67,7 @@ h2 {
   }  
 }
 
-@media (min-width:481px){
+@media (min-width:881px){
   .container-info {
     display: flex;
     gap: 5vw;
@@ -73,7 +75,13 @@ h2 {
   .listResidents {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 200px;
-    margin-right: 200px;
+    
+  }
+}
+@media (min-width:1200px){
+  .listResidents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 100px;
   }
 }

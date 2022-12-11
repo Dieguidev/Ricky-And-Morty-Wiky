@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <img src="https://eloutput.com/app/uploads-eloutput.com/2021/01/Rick-morty-9.jpg" alt="" />
+        <img src="https://media.vogue.es/photos/5cc754b215d9a34b70e83aec/master/pass/rick_y_morty_9442.jpg" alt="" />
       </header>
       <h1>Rick and Morty Wiky</h1>
       <RandomLocacion />

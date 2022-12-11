@@ -9,8 +9,8 @@ const RandomLocacion = () => {
   const [randomLocation, setRandomLocation] = useState([]);
   const [locationId, setLocationId] = useState('')
 
-  useEffect(() =>{
-    const randomId = Math.floor(Math.random() * 126) +1;
+  useEffect(() => {
+    const randomId = Math.floor(Math.random() * 126) + 1;
     axios.get(`https://rickandmortyapi.com/api/location/${randomId}`)
       .then(res => setRandomLocation(res.data));
   }, [])
@@ -19,8 +19,8 @@ const RandomLocacion = () => {
 
 
   const searchLocation = () => {
-    
-    axios.get(`https://rickandmortyapi.com/api/location/${ locationId < 127 ? locationId : alert('no existe ese numero') }`)
+
+    axios.get(`https://rickandmortyapi.com/api/location/${locationId < 127 ? locationId : alert('no existe ese numero')}`)
       .then(res => setRandomLocation(res.data));
 
   }
@@ -29,7 +29,7 @@ const RandomLocacion = () => {
     <div>
       <div className='container-search-info'>
         <div className='container-input'>
-          <input placeholder='Search Ubication' type="text" value={locationId} onChange={e =>setLocationId(e.target.value)}/>
+          <input placeholder='Search Ubication' type="text" value={locationId} onChange={e => setLocationId(e.target.value)} />
 
           <button onClick={searchLocation}>Search</button>
         </div>
@@ -41,7 +41,7 @@ const RandomLocacion = () => {
           <p className='ubicationDate'><b>Residents:</b>  {randomLocation.residents?.length}</p>
         </ul>
       </div>
-     
+
       <ul className='listResidents'>
         {randomLocation.residents?.map(resident => (
           <LocationItem key={resident} url={resident} />
